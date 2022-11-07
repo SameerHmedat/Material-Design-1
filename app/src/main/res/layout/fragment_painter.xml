@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayoutChangingColor"
+    android:background="@color/materialPrimaryColor"
+    tools:context=".fragment.PainterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:text="Choose Your Background Color"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <!--    <com.google.android.material.slider.RangeSlider-->
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:value="0.0"
+        android:stepSize="10"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:haloColor="@color/white"
+        app:thumbColor="@color/white"
+        app:thumbRadius="12dp"
+        app:thumbStrokeColor="@color/white"
+        app:thumbStrokeWidth="0dp"
+        app:tickColor="@color/white"
+        app:trackColor="@color/white"
+        app:values="@array/initial_slider_values" />
+
+    <TextView
+        android:id="@+id/valueNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="italic" />
+
+
+
+
+
+</LinearLayout>
+
+<!--<RadioGroup-->
+<!--android:id="@+id/radioGroup"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:checkedButton="@+id/radio_button_1"-->
+<!--app:useMaterialThemeColors="false">-->
+
+<!--<RadioButton-->
+<!--    android:id="@+id/radio_button_1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:buttonTint="#182e3a"-->
+<!--    android:text="Dark"-->
+<!--    android:textColor="#182e3a"-->
+<!--    android:textSize="22dp"-->
+<!--    app:useMaterialThemeColors="false" />-->
+
+<!--<RadioButton-->
+<!--    android:id="@+id/radio_button_2"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:buttonTint="#5c6bc0"-->
+<!--    android:text="Light"-->
+<!--    android:textColor="#5c6bc0"-->
+<!--    android:textSize="22dp"-->
+<!--    app:useMaterialThemeColors="false" />-->
+
+<!--<RadioButton-->
+<!--    android:id="@+id/radio_button_3"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:buttonTint="@color/materialPrimaryColor"-->
+<!--    android:text="Normal"-->
+<!--    android:textColor="@color/materialPrimaryColor"-->
+<!--    android:textSize="22dp"-->
+<!--    app:useMaterialThemeColors="false" />-->
+<!--</RadioGroup>-->

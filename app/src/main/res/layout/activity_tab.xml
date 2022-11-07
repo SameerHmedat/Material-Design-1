@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabActivity">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/materialPrimaryColor"
+        android:elevation="5dp"
+        app:tabMode="fixed"
+        app:tabIconTint="@color/white"
+        app:tabTextColor="@color/white"
+        app:tabRippleColor="@color/white"
+        app:tabUnboundedRipple="false"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/holo_red_light"
+        app:tabSelectedTextColor="@android:color/holo_red_light"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorAnimationDuration="1000"
+        />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+<!--<com.google.android.material.tabs.TabItem-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Explore"-->
+<!--android:icon="@drawable/ic_baseline_search_24_explore"-->
+<!--    />-->
+<!--<com.google.android.material.tabs.TabItem-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Flights"-->
+<!--android:icon="@drawable/ic_baseline_airplanemode_active_24"-->
+<!--    />-->
+<!--<com.google.android.material.tabs.TabItem-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Trips"-->
+<!--android:icon="@drawable/ic_baseline_shopping_bag_24"-->
+<!--    />-->

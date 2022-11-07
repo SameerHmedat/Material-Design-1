@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MusicFragment">
+
+    <LinearLayout
+        android:id="@+id/LinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pleaseSelectYourFavouriteMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="7dp"
+            android:text="Please Select Your Favourite Music"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/firstMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="TEŞKİLAT Dizi "
+            android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkFirstMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/secondMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="Alan Walker, Sabrina Carpenter - On My Way"
+        android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkSecondMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/thirdMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="İçerde"
+            android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkThirdMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <CheckBox
+            android:id="@+id/fourthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="Alan Walker &amp; Ava Max - Alone"
+            android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkFourthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <CheckBox
+            android:id="@+id/fifthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="Sia - Unstoppable"
+            android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkFifthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/sixthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/materialPrimaryColor"
+            android:text="Söz Dizi"
+            android:textColor="@color/materialPrimaryColor" />
+
+        <TextView
+            android:id="@+id/linkSixthMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            app:chipSpacingHorizontal="62dp"
+            android:layout_marginTop="10dp"
+            app:singleSelection="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/check_all"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                app:rippleColor="@color/Red"
+                app:checkedIconVisible="false"
+                android:text="Show All" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/un_check_all"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                app:rippleColor="@color/Red"
+                app:checkedIconVisible="false"
+                android:text="Hide All " />
+
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+</LinearLayout>

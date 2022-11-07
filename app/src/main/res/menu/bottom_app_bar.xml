@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        android:contentDescription="@string/content_description_search"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_baseline_more_vert_24_light"
+        android:title=""
+        app:showAsAction="always">
+    <menu>
+
+
+        <item
+            android:id="@+id/travel"
+            android:title="Taps"
+            android:contentDescription="@string/content_description_more"
+            />
+<!--        android:icon="@drawable/ic_baseline_airplanemode_active_24"-->
+
+        <item
+            android:id="@+id/learn_about"
+            android:title="learn about"
+            android:contentDescription="@string/content_description_more"
+            />
+    </menu>
+
+    </item>
+
+</menu>

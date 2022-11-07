@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/favoritesPage"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Favorites"/>
+        <item
+            android:id="@+id/musicPage"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_music_note_24"
+            android:title="Music"/>
+        <item
+            android:id="@+id/painter"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_color_lens_24"
+            android:title="Painter"/>
+        <item
+            android:id="@+id/newsPage"
+            android:enabled="true"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings"/>
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/inbox"
+            android:icon="@drawable/ic_baseline_inbox_24"
+            android:title="Inbox"
+         />
+        <item
+            android:id="@+id/starred"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Starred" />
+        <item
+            android:id="@+id/archive"
+            android:icon="@drawable/ic_baseline_archive_24"
+            android:title="Archive" />
+
+        <item
+            android:id="@+id/trash"
+            android:icon="@drawable/ic_baseline_restore_from_trash_24"
+            android:title="Trash" />
+
+        <item
+            android:id="@+id/spam"
+            android:icon="@drawable/ic_baseline_error_24"
+            android:title="Spam" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="Labels">
+            <menu>
+                <item
+                    android:id="@+id/family"
+                    android:icon="@drawable/ic_baseline_favorite_24"
+                    android:title="Family" />
+
+                <item
+                    android:id="@+id/friend"
+                    android:icon="@drawable/ic_baseline_favorite_24"
+                    android:title="Friends" />
+                <item
+                    android:id="@+id/work"
+                    android:icon="@drawable/ic_baseline_favorite_24"
+                    android:title="Work" />
+
+            </menu>
+        </item>
+    </group>
+
+
+</menu>
